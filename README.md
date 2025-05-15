@@ -1,0 +1,6 @@
+- **首頁**：`index.html`
+- **人氣商店 - 列表**：`store-list.html`
+- **人氣商店 - 詳細**：`store-detail.html`
+- **創業者圓夢專區**：`story-detail.html`
+- **廠商登入**：`store-sign-in.html`
+- **廠商資料維護**：`store-maintain.html`

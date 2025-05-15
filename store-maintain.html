@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>廠商資料維護</title>
+ <link rel="stylesheet" href="./css/reset.css">
+ <link rel="stylesheet" href="./css/bootstrap.min.css">
+ <link rel="stylesheet" href="./css/fontawesome.min.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+ <link rel="stylesheet" href="./css/mb.css">
+ <link rel="stylesheet" href="./css/nav.css">
+ <link rel="stylesheet" href="./css/style.css"></head>
+
+<body>
+    <nav>
+    <div class="nav-row site-link" id="site-menu">
+        <div class="logo">
+            <a href="/" title="榮光商店">
+                <img src="./img/logo.png?v=1" alt="榮光商店" class="d-block img-fluid">
+            </a>
+        </div>
+        <ul class="ulmenu" id="site_nav">
+            <li title="榮光商店-創業者圓夢專區"><a href="javascript:;" role="link">創業者圓夢專區</a></li>
+            <li title="榮光商店-人氣商店">
+                <a href="javascript:;" role="link" class="menu-toggle">人氣商店 </a>
+                <ul class="submenu">
+                                            <li>
+                            <a href="javascript:;" role="link">眷村美食</a>
+                        </li>
+                                            <li>
+                            <a href="javascript:;" role="link">民宿小棧</a>
+                        </li>
+                                            <li>
+                            <a href="javascript:;" role="link">購物Let go</a>
+                        </li>
+                                            <li>
+                            <a href="javascript:;" role="link">榮民運將</a>
+                        </li>
+                                            <li>
+                            <a href="javascript:;" role="link">知性人文</a>
+                        </li>
+                                            <li>
+                            <a href="javascript:;" role="link">休閒娛樂</a>
+                        </li>
+                                            <li>
+                            <a href="javascript:;" role="link">醫療服務</a>
+                        </li>
+                                            <li>
+                            <a href="javascript:;" role="link">工商服務</a>
+                        </li>
+                                            <li>
+                            <a href="javascript:;" role="link">本會輔導</a>
+                        </li>
+                                            <li>
+                            <a href="javascript:;" role="link">優惠</a>
+                        </li>
+                                    </ul>
+            </li>
+            <li title="榮光商店-網站導覽"><a href="javascript:;" role="link">網站導覽</a></li>
+        </ul>
+        <div class="fixbtnm">
+            <a href="javascript:;" class="btn btn-site-nav" title="榮光商店-聯絡我們">聯絡我們</a>
+            <div>
+                <a href="javascript:;" class="text-site-primary fs-3 mx-3"> <i class="fa-solid fa-user"></i></a>
+                <a href="javascript:;" class="text-site-primary fs-3"> <i class="fa-brands fa-square-facebook"></i></a>
+            </div>
+
+        </div>
+    </div>
+    <input type="button" id="mclick" class="mclick">
+    <div id="slide-over"></div>
+</nav>
+    <div class="main-container">
+        <div class="container mb-5">
+            <div class="container mt-5">
+                <h4 class="text-site-heavy fw-bold">公司資料維護</h4>
+                <form>
+                    <div class="ui-white-card p-4">
+                        <div class="row mb-3 align-items-end g-3">
+                            <div class="col-md-4">
+                                <label class="form-label"><span class="text-danger">＊</span>帳號</label>
+                                <input type="text" class="form-control" value="nantuo011">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label"><span class="text-danger">＊</span>密碼</label>
+                                <input type="password" class="form-control">
+
+                            </div>
+                            <div class="col-md-4">
+                                <p class="mb-0 mt-2">密碼需<u class="text-danger">英文字大小</u>寫及<u class="text-danger">數字</u>三種混合</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="ui-white-card p-4 my-4">
+
+                        <div class="row mb-3 g-3">
+                            <div class="col-md-6">
+                                <label class="form-label"><span class="text-danger">＊</span>公司名稱</label>
+                                <input type="text" class="form-control" value="AAAA商行">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label"><span class="text-danger">＊</span>統一編號</label>
+                                <input type="text" class="form-control" value="12345678">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label"><span class="text-danger">＊</span>公司負責人</label>
+                                <input type="text" class="form-control" value="AAAAAA">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label"><span class="text-danger">＊</span>公司電話</label>
+                                <input type="text" class="form-control" value="0933-500579">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label"><span class="text-danger">＊</span>身分證號</label>
+                                <input type="text" class="form-control" value="M120940987">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label"><span class="text-danger">＊</span>商家行業別</label>
+                                <select class="form-select ">
+                                    <option selected>請選擇</option>
+                                    <option value="眷村美食">眷村美食</option>
+                                    <option value="民宿小棧">民宿小棧</option>
+                                    <option value="榮民運將">榮民運將</option>
+                                    <option value="知性人文">知性人文</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 g-3">
+                            <div class="col-md-12">
+                                <label class="form-label"><span class="text-danger">＊</span>地址</label>
+                                <div class="row g-3">
+                                    <div class="col-6 col-sm-2">
+                                        <select class="form-select ">
+                                            <option selected>請選擇縣市</option>
+                                            <option value="南投縣">南投縣</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6 col-sm-2">
+                                        <select class="form-select ">
+                                            <option selected>請選擇行政區</option>
+                                            <option value="南投縣">南投市</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-8">
+                                        <input type="text" class="form-control" value="竹林村4鄰田頭巷35之66號">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">網址</label>
+                                <input type="text" class="form-control" value="https://">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label"><span class="text-danger">＊</span>信箱 <span class="text-danger">此電子郵箱為登入帳號</span></label>
+                                <input type="email" class="form-control" value="qv8179@yahoo.com.tw">
+
+                            </div>
+                        </div>
+                    </div>
+                                                                <div class="ui-white-card p-4 my-4">
+                            <div class="d-flex aling-items-center">
+                                <span class="text-danger">＊</span>
+                                <h4 class="text-site-heavy fw-bold">上傳圖片(上排)</h4>
+                            </div>
+                                                            <div class="mb-3">
+                                    <label class="form-label">上傳圖片(左)</label>
+                                    <div class="d-flex flex-sm-row flex-column align-items-center">
+                                        <input class="form-control" type="file">
+                                        <div class="flex-shrink-0 ms-sm-3 mt-2 mt-sm-0">
+                                            <a class="btn btn-success btn-sm" herf="javascript:;">預覽</a>
+                                            <a class="btn btn-warning btn-sm" herf="javascript:;">裁切</a>
+                                            <a class="btn btn-danger btn-sm" herf="javascript:;">刪除</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                                            <div class="mb-3">
+                                    <label class="form-label">上傳圖片(中)</label>
+                                    <div class="d-flex flex-sm-row flex-column align-items-center">
+                                        <input class="form-control" type="file">
+                                        <div class="flex-shrink-0 ms-sm-3 mt-2 mt-sm-0">
+                                            <a class="btn btn-success btn-sm" herf="javascript:;">預覽</a>
+                                            <a class="btn btn-warning btn-sm" herf="javascript:;">裁切</a>
+                                            <a class="btn btn-danger btn-sm" herf="javascript:;">刪除</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                                            <div class="mb-3">
+                                    <label class="form-label">上傳圖片(右)</label>
+                                    <div class="d-flex flex-sm-row flex-column align-items-center">
+                                        <input class="form-control" type="file">
+                                        <div class="flex-shrink-0 ms-sm-3 mt-2 mt-sm-0">
+                                            <a class="btn btn-success btn-sm" herf="javascript:;">預覽</a>
+                                            <a class="btn btn-warning btn-sm" herf="javascript:;">裁切</a>
+                                            <a class="btn btn-danger btn-sm" herf="javascript:;">刪除</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                                    </div>
+                                            <div class="ui-white-card p-4 my-4">
+                            <div class="d-flex aling-items-center">
+                                <span class="text-danger">＊</span>
+                                <h4 class="text-site-heavy fw-bold">上傳圖片(中排)</h4>
+                            </div>
+                                                            <div class="mb-3">
+                                    <label class="form-label">上傳圖片(左)</label>
+                                    <div class="d-flex flex-sm-row flex-column align-items-center">
+                                        <input class="form-control" type="file">
+                                        <div class="flex-shrink-0 ms-sm-3 mt-2 mt-sm-0">
+                                            <a class="btn btn-success btn-sm" herf="javascript:;">預覽</a>
+                                            <a class="btn btn-warning btn-sm" herf="javascript:;">裁切</a>
+                                            <a class="btn btn-danger btn-sm" herf="javascript:;">刪除</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                                            <div class="mb-3">
+                                    <label class="form-label">上傳圖片(中)</label>
+                                    <div class="d-flex flex-sm-row flex-column align-items-center">
+                                        <input class="form-control" type="file">
+                                        <div class="flex-shrink-0 ms-sm-3 mt-2 mt-sm-0">
+                                            <a class="btn btn-success btn-sm" herf="javascript:;">預覽</a>
+                                            <a class="btn btn-warning btn-sm" herf="javascript:;">裁切</a>
+                                            <a class="btn btn-danger btn-sm" herf="javascript:;">刪除</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                                            <div class="mb-3">
+                                    <label class="form-label">上傳圖片(右)</label>
+                                    <div class="d-flex flex-sm-row flex-column align-items-center">
+                                        <input class="form-control" type="file">
+                                        <div class="flex-shrink-0 ms-sm-3 mt-2 mt-sm-0">
+                                            <a class="btn btn-success btn-sm" herf="javascript:;">預覽</a>
+                                            <a class="btn btn-warning btn-sm" herf="javascript:;">裁切</a>
+                                            <a class="btn btn-danger btn-sm" herf="javascript:;">刪除</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                                    </div>
+                                            <div class="ui-white-card p-4 my-4">
+                            <div class="d-flex aling-items-center">
+                                <span class="text-danger">＊</span>
+                                <h4 class="text-site-heavy fw-bold">上傳圖片(下排)</h4>
+                            </div>
+                                                            <div class="mb-3">
+                                    <label class="form-label">上傳圖片(左)</label>
+                                    <div class="d-flex flex-sm-row flex-column align-items-center">
+                                        <input class="form-control" type="file">
+                                        <div class="flex-shrink-0 ms-sm-3 mt-2 mt-sm-0">
+                                            <a class="btn btn-success btn-sm" herf="javascript:;">預覽</a>
+                                            <a class="btn btn-warning btn-sm" herf="javascript:;">裁切</a>
+                                            <a class="btn btn-danger btn-sm" herf="javascript:;">刪除</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                                            <div class="mb-3">
+                                    <label class="form-label">上傳圖片(中)</label>
+                                    <div class="d-flex flex-sm-row flex-column align-items-center">
+                                        <input class="form-control" type="file">
+                                        <div class="flex-shrink-0 ms-sm-3 mt-2 mt-sm-0">
+                                            <a class="btn btn-success btn-sm" herf="javascript:;">預覽</a>
+                                            <a class="btn btn-warning btn-sm" herf="javascript:;">裁切</a>
+                                            <a class="btn btn-danger btn-sm" herf="javascript:;">刪除</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                                            <div class="mb-3">
+                                    <label class="form-label">上傳圖片(右)</label>
+                                    <div class="d-flex flex-sm-row flex-column align-items-center">
+                                        <input class="form-control" type="file">
+                                        <div class="flex-shrink-0 ms-sm-3 mt-2 mt-sm-0">
+                                            <a class="btn btn-success btn-sm" herf="javascript:;">預覽</a>
+                                            <a class="btn btn-warning btn-sm" herf="javascript:;">裁切</a>
+                                            <a class="btn btn-danger btn-sm" herf="javascript:;">刪除</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                                    </div>
+                    
+
+                    <div class="alert alert-warning" role="alert">
+                        <p>（檔案格式：jpg檔案類型，圖片限1024 KB）</p>
+                        ※建議圖片尺寸的比例為6:4左右（提供參考尺寸：1300X900、900X425、600X400...）
+                        <a class="btn btn-warning" href="javascript:;">圖片調整教學</a>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label class="form-label">說明</label>
+                        <textarea class="form-control" rows="5">「創業家專區」是提供創業家商品展示的空間，....（以下略）</textarea>
+                    </div>
+                    <div class="mb-3 text-center">
+                        <button type="submit" class="btn btn-primary btn-lg">送出</button>
+                        <button type="reset" class="btn btn-secondary btn-lg">取消</button>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+        <footer class="bg-site-footer-bg text-white py-5">
+    <div class="container">
+        <div class="row justify-content-center gy-4">
+            <div class="col-10 col-lg-5">
+                <div class="d-flex">
+                    <div class="me-4 d-lg-block d-none"> <img src="./img/vac-logo.png" alt="國軍退除役官兵輔導委員會" style="max-width:6vw;"></div>
+                    <ul class="list-unstyled mb-0">
+                        <li class="fs-5 mb-3"><a href="https://www.vac.gov.tw/">國軍退除役官兵輔導委員會</a></li>
+                        <li class="mb-3">02-27255700</li>
+                        <li>11025臺北市信義區忠孝東路五段222號</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-10 col-lg-3 center-border d-flex justify-content-lg-center">
+                <ul class="list-unstyled mb-0">
+                    <li class="mb-3"><a href="javascript:;">創業者回夢專區</a></li>
+                    <li class="mb-3"><a href="javascript:;">人氣商店</a></li>
+                    <li>累計瀏覽人數：1825609人</li>
+                </ul>
+            </div>
+            <div class="col-10 col-lg-3 d-flex justify-content-lg-center">
+                <ul class="list-unstyled mb-0">
+                    <li class="mb-3"><a href="javascript:;">相關連結</a></li>
+                    <li class="mb-3"><a href="javascript:;">聯絡我們</a></li>
+                    <li class="mb-3"><a href="javascript:;">網站資料開發宣告</a></li>
+                    <li><a href="javascript:;">隱私權宣告</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<a href="#site-top" class="back-to-top" style="display: inline;">
+    <i class="bi bi-caret-up-fill"></i>
+</a>        <script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/jquery.min.js"></script>
+ <script src="./js/script.js?v=1"></script></body>
+
+</html>

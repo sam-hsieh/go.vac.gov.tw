@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>人氣商店-列表</title>
+ <link rel="stylesheet" href="./css/reset.css">
+ <link rel="stylesheet" href="./css/bootstrap.min.css">
+ <link rel="stylesheet" href="./css/fontawesome.min.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+ <link rel="stylesheet" href="./css/mb.css">
+ <link rel="stylesheet" href="./css/nav.css">
+ <link rel="stylesheet" href="./css/style.css"></head>
+
+<body>
+    <nav>
+    <div class="nav-row site-link" id="site-menu">
+        <div class="logo">
+            <a href="/" title="榮光商店">
+                <img src="./img/logo.png?v=1" alt="榮光商店" class="d-block img-fluid">
+            </a>
+        </div>
+        <ul class="ulmenu" id="site_nav">
+            <li title="榮光商店-創業者圓夢專區"><a href="javascript:;" role="link">創業者圓夢專區</a></li>
+            <li title="榮光商店-人氣商店">
+                <a href="javascript:;" role="link" class="menu-toggle">人氣商店 </a>
+                <ul class="submenu">
+                                            <li>
+                            <a href="javascript:;" role="link">眷村美食</a>
+                        </li>
+                                            <li>
+                            <a href="javascript:;" role="link">民宿小棧</a>
+                        </li>
+                                            <li>
+                            <a href="javascript:;" role="link">購物Let go</a>
+                        </li>
+                                            <li>
+                            <a href="javascript:;" role="link">榮民運將</a>
+                        </li>
+                                            <li>
+                            <a href="javascript:;" role="link">知性人文</a>
+                        </li>
+                                            <li>
+                            <a href="javascript:;" role="link">休閒娛樂</a>
+                        </li>
+                                            <li>
+                            <a href="javascript:;" role="link">醫療服務</a>
+                        </li>
+                                            <li>
+                            <a href="javascript:;" role="link">工商服務</a>
+                        </li>
+                                            <li>
+                            <a href="javascript:;" role="link">本會輔導</a>
+                        </li>
+                                            <li>
+                            <a href="javascript:;" role="link">優惠</a>
+                        </li>
+                                    </ul>
+            </li>
+            <li title="榮光商店-網站導覽"><a href="javascript:;" role="link">網站導覽</a></li>
+        </ul>
+        <div class="fixbtnm">
+            <a href="javascript:;" class="btn btn-site-nav" title="榮光商店-聯絡我們">聯絡我們</a>
+            <div>
+                <a href="javascript:;" class="text-site-primary fs-3 mx-3"> <i class="fa-solid fa-user"></i></a>
+                <a href="javascript:;" class="text-site-primary fs-3"> <i class="fa-brands fa-square-facebook"></i></a>
+            </div>
+
+        </div>
+    </div>
+    <input type="button" id="mclick" class="mclick">
+    <div id="slide-over"></div>
+</nav>    <div class="page-title">
+        <div class="page-title-inner">
+            <div class="container">
+                <div class="n1-title f-news" style="--text-color: #fff;--text-after-color:rgba(255, 255, 255, 0.5)">
+                    人氣商店
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="container">
+
+            <div class="store-list row justify-content-sm-end justify-content-center aling-items-center mb-4">
+                <div class="col-11 col-lg-7">
+                    <h1 class="mb-0 text-site-heavy">眷村美食</h1>
+                </div>
+                <div class="col-11 col-lg-5">
+                    <div class="row justify-content-center align-items-center gy-3">
+                        <div class="col-12 col-sm-6">
+                            <form action="" method="GET">
+                                <div class="search-bar">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="請輸入關鍵字" aria-label="Search" aria-describedby="search-addon">
+                                        <button class="btn bg-white" type="submit" id="search-addon">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <select class="form-select ">
+                                <option selected>選擇城市</option>
+                                <option value="台北市">台北市</option>
+                                <option value="新北市">新北市</option>
+                                <option value="桃園市">桃園市</option>
+                                <option value="新竹市">新竹市</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="store-list row justify-content-center">
+                                    <div class="col-11 col-sm-6 col-lg-4">
+                        <a href="javascript:;" class="each-store w-100">
+                            <div class="store-img">
+                                <img src="./img/temp1.jpg" alt="" class="square-img img-fluid">
+                            </div>
+                            <div class="store-info">
+                                <div class="fs-3 text-site-heavy fw-bold my-2">
+                                    劉山東牛肉麵店                                </div>
+                                <p>身為超級老店的劉山東，民國 40年由第一代劉佩芹和其兄弟飄洋過海來台後，賣起家鄉口味的牛現第二代劉少麟接掌父親的牛肉麵店...</p>
+                                <div class="d-flex align-items-center gap-2">
+                                    <div class="btn btn-site-secondary rounded-pill" title="榮光商店-聯絡我們">
+                                        聯絡我們                                    </div>
+                                    <i class="fa-solid fa-eye text-site-lightest-g"></i>
+                                    <p class="mb-0">2346<span class="text-site-light-g">次觀看</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="col-11 col-sm-6 col-lg-4">
+                        <a href="javascript:;" class="each-store w-100">
+                            <div class="store-img">
+                                <img src="./img/temp2.jpg" alt="" class="square-img img-fluid">
+                            </div>
+                            <div class="store-info">
+                                <div class="fs-3 text-site-heavy fw-bold my-2">
+                                    友一日式便當                                </div>
+                                <p>榮民創業開設 花蓮評價日式便當店 平價又好吃 地點在遠東百貨的正對面 地址: 花蓮市和平路552-1號 電話:0930-189947 歡迎來電預約喔...</p>
+                                <div class="d-flex align-items-center gap-2">
+                                    <div class="btn btn-site-secondary rounded-pill" title="榮光商店-詳細內容">
+                                        詳細內容                                    </div>
+                                    <i class="fa-solid fa-eye text-site-lightest-g"></i>
+                                    <p class="mb-0">1587<span class="text-site-light-g">次觀看</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="col-11 col-sm-6 col-lg-4">
+                        <a href="javascript:;" class="each-store w-100">
+                            <div class="store-img">
+                                <img src="./img/temp3.jpg" alt="" class="square-img img-fluid">
+                            </div>
+                            <div class="store-info">
+                                <div class="fs-3 text-site-heavy fw-bold my-2">
+                                    福田皮飾有限公司                                </div>
+                                <p>福田皮飾有限公司，成立於西元1987年，從事皮件專業製造、設計、加工，已有20年歷史，以鯨魚、海獅等自創品牌...</p>
+                                <div class="d-flex align-items-center gap-2">
+                                    <div class="btn btn-site-secondary rounded-pill" title="榮光商店-詳細內容">
+                                        詳細內容                                    </div>
+                                    <i class="fa-solid fa-eye text-site-lightest-g"></i>
+                                    <p class="mb-0">578469<span class="text-site-light-g">次觀看</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="col-11 col-sm-6 col-lg-4">
+                        <a href="javascript:;" class="each-store w-100">
+                            <div class="store-img">
+                                <img src="./img/temp4.jpg" alt="" class="square-img img-fluid">
+                            </div>
+                            <div class="store-info">
+                                <div class="fs-3 text-site-heavy fw-bold my-2">
+                                    阿美米干                                </div>
+                                <p>阿美米干主打雲南家鄉口味，湯頭鮮美、米干Q彈，是在地人推薦的早餐選擇。</p>
+                                <div class="d-flex align-items-center gap-2">
+                                    <div class="btn btn-site-secondary rounded-pill" title="榮光商店-聯絡我們">
+                                        聯絡我們                                    </div>
+                                    <i class="fa-solid fa-eye text-site-lightest-g"></i>
+                                    <p class="mb-0">135<span class="text-site-light-g">次觀看</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="col-11 col-sm-6 col-lg-4">
+                        <a href="javascript:;" class="each-store w-100">
+                            <div class="store-img">
+                                <img src="./img/temp5.jpg" alt="" class="square-img img-fluid">
+                            </div>
+                            <div class="store-info">
+                                <div class="fs-3 text-site-heavy fw-bold my-2">
+                                    小李水餃館                                </div>
+                                <p>小李水餃館以手工現包水餃聞名，皮薄餡多、價格實惠，是附近學生的最愛。</p>
+                                <div class="d-flex align-items-center gap-2">
+                                    <div class="btn btn-site-secondary rounded-pill" title="榮光商店-詳細內容">
+                                        詳細內容                                    </div>
+                                    <i class="fa-solid fa-eye text-site-lightest-g"></i>
+                                    <p class="mb-0">26997<span class="text-site-light-g">次觀看</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="col-11 col-sm-6 col-lg-4">
+                        <a href="javascript:;" class="each-store w-100">
+                            <div class="store-img">
+                                <img src="./img/temp6.jpg" alt="" class="square-img img-fluid">
+                            </div>
+                            <div class="store-info">
+                                <div class="fs-3 text-site-heavy fw-bold my-2">
+                                    幸福烘焙坊                                </div>
+                                <p>幸福烘焙坊每日新鮮出爐各式麵包與蛋糕，堅持天然食材，深受家庭客群喜愛。</p>
+                                <div class="d-flex align-items-center gap-2">
+                                    <div class="btn btn-site-secondary rounded-pill" title="榮光商店-詳細內容">
+                                        詳細內容                                    </div>
+                                    <i class="fa-solid fa-eye text-site-lightest-g"></i>
+                                    <p class="mb-0">82<span class="text-site-light-g">次觀看</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                            </div>
+            <div class="d-flex justify-content-center align-items-center mt-5">
+
+                <ul class="pagination">
+                    <li class="page-item"><a href="#" class="page-link"><i class="fa-solid fa-angle-left"></i></a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active">
+                        <a class="page-link" href="#" aria-current="page">2</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-angle-right"></i></a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <footer class="bg-site-footer-bg text-white py-5">
+    <div class="container">
+        <div class="row justify-content-center gy-4">
+            <div class="col-10 col-lg-5">
+                <div class="d-flex">
+                    <div class="me-4 d-lg-block d-none"> <img src="./img/vac-logo.png" alt="國軍退除役官兵輔導委員會" style="max-width:6vw;"></div>
+                    <ul class="list-unstyled mb-0">
+                        <li class="fs-5 mb-3"><a href="https://www.vac.gov.tw/">國軍退除役官兵輔導委員會</a></li>
+                        <li class="mb-3">02-27255700</li>
+                        <li>11025臺北市信義區忠孝東路五段222號</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-10 col-lg-3 center-border d-flex justify-content-lg-center">
+                <ul class="list-unstyled mb-0">
+                    <li class="mb-3"><a href="javascript:;">創業者回夢專區</a></li>
+                    <li class="mb-3"><a href="javascript:;">人氣商店</a></li>
+                    <li>累計瀏覽人數：1825609人</li>
+                </ul>
+            </div>
+            <div class="col-10 col-lg-3 d-flex justify-content-lg-center">
+                <ul class="list-unstyled mb-0">
+                    <li class="mb-3"><a href="javascript:;">相關連結</a></li>
+                    <li class="mb-3"><a href="javascript:;">聯絡我們</a></li>
+                    <li class="mb-3"><a href="javascript:;">網站資料開發宣告</a></li>
+                    <li><a href="javascript:;">隱私權宣告</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<a href="#site-top" class="back-to-top" style="display: inline;">
+    <i class="bi bi-caret-up-fill"></i>
+</a>    <script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/jquery.min.js"></script>
+ <script src="./js/script.js?v=1"></script></body>
+
+</html>

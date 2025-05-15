@@ -1,0 +1,90 @@
+// .but {
+//     --ol-bg-colo: #FF4C00;
+//     --ol-bg-color: #fff;
+//     font-size: 1rem;
+//     border-radius: 0.25rem;
+//     color: var(--ol-tx-color);
+//     display: flex;
+//     align-items: center;
+//     line-height: 1.5;
+//     outline: none;
+//     background-color:  #FF4C00;
+//     color: #fff;
+//     transition: all .3s;
+// }
+
+// .but-ol:hover,
+// .hit-but-ol:hover .but-ol {
+//     background-color: color-mix(in srgb, var(--ol-bg-colo) 80%, black);
+// }
+// SCSS Mixin：自動產生按鈕樣式（背景色、文字色、命名代號）
+@mixin btn-theme($bg, $color, $name) {
+  .btn-#{$name} {
+    background-color: $bg;
+    color: $color;
+    transition: all .3s;
+
+    &:hover,
+    &:active {
+
+      // 判斷背景色亮度，自動調整 hover/active 顏色
+      @if (lightness($bg) > 50) {
+        background-color: lighten($bg, 10%);
+        color: #000;
+      }
+
+      @else {
+        background-color: darken($bg, 10%);
+        color: #fff;
+      }
+    }
+  }
+
+  .btn-#{$name}:active,
+  .btn-#{$name}.active,
+  .btn-#{$name}.show,
+  .btn-check:checked+.btn-#{$name} {
+    @if (lightness($bg) > 50) {
+      background-color: lighten($bg, 15%) !important;
+      color: #000 !important;
+      border-color: lighten($bg, 20%) !important;
+    }
+
+    @else {
+      background-color: darken($bg, 15%) !important;
+      color: #fff !important;
+      border-color: darken($bg, 20%) !important;
+    }
+  }
+}
+
+// 範例：產生 .btn-site-nav 樣式
+@include btn-theme(#FF4C00, #fff, "site-nav");
+@include btn-theme(#BEE3E2, #2E7975, "site-secondary");
+@include btn-theme(#2E7975, #BEE3E2, "site-heavy");
+
+
+// SCSS Mixin：自動產生文字色與背景色 class（顏色、命名代號）
+@mixin txbg-theme($bg, $name) {
+  .text-#{$name} {
+    color: $bg;
+  }
+
+  .bg-#{$name} {
+    background-color: $bg;
+  }
+}
+
+// 範例：產生 .text-site-primary 與 .bg-site-primary 樣式
+@include txbg-theme(#FF4C00, "site-primary");
+@include txbg-theme(#2E7975, "site-heavy");
+@include txbg-theme(#56A5A1, "site-light-g");
+@include txbg-theme(#C6E3EC, "site-lightest-g");
+@include txbg-theme(#37405D, "site-footer-bg");
+@include txbg-theme(transparent, "transparent");
+
+
+
+.pointer-events-none {
+  pointer-events: none;
+}

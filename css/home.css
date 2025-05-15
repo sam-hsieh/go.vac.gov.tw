@@ -1,0 +1,91 @@
+#hero {
+    background-color: #7AE0E4;
+    display: flex;
+    justify-content: center;
+}
+
+.home-main-btn-group {
+    margin-top: -3rem;
+    position: relative;
+    z-index: 94;
+}
+
+.home-main-btn {
+    padding-top: clamp(14px, 8vw, 3.3rem);
+    padding-bottom: clamp(14px, 8vw, 3.3rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: min(2.5rem, 8vw);
+    color: #757575;
+    line-height: 1;
+
+}
+
+.home-news {
+    margin: min(8vh, 4rem) 0;
+}
+
+.home-news-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.home-news-ul li:not(:last-child) {
+    border-bottom: 1px solid #B6B6B6;
+    margin-bottom: 0.5rem;
+}
+
+
+.store-list-swiper {
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+/* 調整 swiper 左右箭頭為垂直置中 */
+.swiper-button-next,
+.swiper-button-prev {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5%;
+    height: 5%;
+    background-color: #E0F7FA;
+    /* 自訂背景顏色 */
+    color: #3373AE;
+    /* 箭頭顏色 */
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/* 箭頭位置稍微往內縮（可依需求微調） */
+.swiper-button-prev {
+    left: -5%;
+}
+
+.swiper-button-next {
+    right: -5%;
+}
+
+.home-event-bg {
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    .home-main-btn-group {
+        margin-top: 0;
+    }
+
+    .swiper-button-prev {
+        left: 0%;
+    }
+
+    .swiper-button-next {
+        right: 0%;
+    }
+}

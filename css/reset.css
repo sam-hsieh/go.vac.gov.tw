@@ -1,0 +1,4 @@
+.active > .page-link{
+   --bs-pagination-active-bg: #3373AE;
+   --bs-pagination-active-border-color:#3373AE;
+}
