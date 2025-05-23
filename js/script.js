@@ -13,12 +13,12 @@ function scrollHandler() {
     }
 }
 
-var checkbox = document.getElementById("mclick")
+var sitNavCheckbox = document.getElementById("mclick")
 var slideOver = document.getElementById("slide-over")
 var slide = document.getElementById("site-menu");
 var site_nav = document.getElementById("site_nav");
-checkbox.addEventListener("click", function () {
-    if (checkbox.classList.contains('open')) {
+sitNavCheckbox.addEventListener("click", function () {
+    if (sitNavCheckbox.classList.contains('open')) {
         closeSiteMenu()
     } else {
         openSiteMenu()
@@ -28,15 +28,15 @@ slideOver.addEventListener("touchstart", function () {
     closeSiteMenu()
 });
 const closeSiteMenu = () => {
-    checkbox.checked = false;
+    sitNavCheckbox.checked = false;
     site_nav.classList.remove('open-menu');
     slide.classList.remove('open-menu');
     slideOver.classList.remove('toggle');
-    checkbox.classList.remove('open');
+    sitNavCheckbox.classList.remove('open');
 }
 const openSiteMenu = () => {
     slide.focus();
-    checkbox.classList.add('open');
+    sitNavCheckbox.classList.add('open');
     site_nav.classList.add('open-menu');
     slide.classList.add('open-menu');
     slideOver.classList.add('toggle');

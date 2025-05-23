@@ -121,6 +121,35 @@ main {
   box-shadow: none;
 }
 
+.contact-h4t {
+  display: block;
+  padding: 0.3rem 0 0.3rem 1rem;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding-left: 15px;
+  position: relative;
+}
+
+.contact-h4t::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 30px;
+  background-color: #FF4C00;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  border-radius: 4px;
+}
+
+.contact-h4t + a {
+  display: block;
+  margin-left: 1rem;
+  color: #757575;
+}
+
 @media (max-width: 768px) {
   .page-title-inner {
     background-image: url(../img/page-title-bg-m.svg);

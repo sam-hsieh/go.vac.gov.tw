@@ -1,0 +1,82 @@
+.sitemap-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.sitemap-main {
+    background-color: #c8f1f1;
+    padding: 1rem 2rem;
+    border-radius: 0.625rem;
+    text-align: center;
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.sitemap-main-line {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 2.5rem;
+    height: 0.125rem;
+    background: #ddd;
+    transform: translateY(-50%);
+}
+
+.sitemap-branch {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    position: relative;
+}
+
+.sitemap-branch::before {
+    content: "";
+    position: absolute;
+    left: -1.25rem;
+    top: 2rem;
+    bottom: 2rem;
+    width: 0.125rem;
+    background: #ddd;
+}
+
+.sitemap-item {
+    background-color: #8ee8f1;
+    padding: 1rem 2rem;
+    border-radius: 0.625rem;
+    position: relative;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.sitemap-item::before {
+    content: "";
+    position: absolute;
+    left: -1.25rem;
+    top: 50%;
+    width: 1.25rem;
+    height: 0.125rem;
+    background: #ddd;
+    transform: translateY(-50%);
+}
+
+.sitemap-item:hover {
+    background-color: #65d8e5;
+    transform: translateX(0.2rem);
+}
+
+@media (max-width: 600px) {
+    /* .sitemap-container {
+        flex-direction: column;
+        align-items: flex-start;
+    } 
+
+    .sitemap-main-line,
+    .sitemap-branch::before,
+    .sitemap-item::before {
+        display: none;
+    }*/
+}

@@ -4,3 +4,7 @@
 - **創業者圓夢專區**：`story-detail.html`
 - **廠商登入**：`store-sign-in.html`
 - **廠商資料維護**：`store-maintain.html`
+- **創業者圓夢專區-列表**：`story-list.html`
+- **網站導覽**：`site-map.html`
+- **相關連結**：`store-web-link.html`
+- **聯絡我們**：`contact.html`

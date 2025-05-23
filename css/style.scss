@@ -1,7 +1,7 @@
 root {
     --text-after-color: #7AE0E4;
     --text-color: #3373AE;
-   
+
 }
 
 body,
@@ -14,10 +14,6 @@ a {
     text-decoration: none;
     color: #063D76;
 }
-
-
-
-
 
 main {
     background-image: url(../img/main-bg.png);
@@ -105,6 +101,7 @@ main {
     display: flex;
     align-items: center;
 }
+
 .search-bar {
     max-width: 500px;
     margin: auto auto;
@@ -122,8 +119,36 @@ main {
 .search-bar .btn {
     border: none;
 }
-.search-bar .form-control:focus{
+
+.search-bar .form-control:focus {
     box-shadow: none;
+}
+
+.contact-h4t {
+    display: block;
+    padding: 0.3rem 0 0.3rem 1rem;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding-left: 15px;
+    position: relative;
+}
+.contact-h4t::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 30px;
+    background-color: #FF4C00;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    border-radius: 4px;
+}
+.contact-h4t + a {
+    display: block;
+    margin-left:1rem;
+    color: #757575;
 }
 @media (max-width: 768px) {
     .page-title-inner {
