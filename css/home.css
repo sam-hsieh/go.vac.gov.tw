@@ -2,6 +2,13 @@
     background-color: #7AE0E4;
     display: flex;
     justify-content: center;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    #hero {
+        max-height: 650px;
+    }
 }
 
 .home-main-btn-group {
@@ -19,23 +26,17 @@
     font-size: min(2.5rem, 8vw);
     color: #757575;
     line-height: 1;
+    transition: background-color 0.3s ease;
 
 }
 
-.home-news {
-    margin: min(8vh, 4rem) 0;
+@media screen and (min-width: 768px) {
+    .home-main-btn:hover {
+        background-color: #C6E3EC;
+    }
 }
 
-.home-news-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
 
-.home-news-ul li:not(:last-child) {
-    border-bottom: 1px solid #B6B6B6;
-    margin-bottom: 0.5rem;
-}
 
 
 .store-list-swiper {

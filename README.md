@@ -8,3 +8,4 @@
 - **網站導覽**：`site-map.html`
 - **相關連結**：`store-web-link.html`
 - **聯絡我們**：`contact.html`
+- **首頁的BANNER建議尺寸**：`1440x650(電腦)／850x1500(手機)`
