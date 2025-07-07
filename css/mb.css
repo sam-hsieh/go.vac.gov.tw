@@ -103,6 +103,14 @@
   background-color: transparent;
 }
 
+.text-site-tertiary {
+  color: #F8F9FA;
+}
+
+.bg-site-tertiary {
+  background-color: #F8F9FA;
+}
+
 .pointer-events-none {
   pointer-events: none;
 }/*# sourceMappingURL=mb.css.map */
