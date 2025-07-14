@@ -1,4 +1,3 @@
-
 //AOS.init();
 function scrollHandler() {
     var scrollDistance = $(window).scrollTop();
@@ -88,3 +87,17 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+// showAllToglle button toggle
+document.addEventListener('DOMContentLoaded', function () {
+    const showAllToggleBtn = document.querySelector('.showAllToglle');
+    const allCategories = document.querySelector('#allCategories');
+    if (showAllToggleBtn) {
+        showAllToggleBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            this.classList.toggle('nextClose');
+            $(allCategories).stop().slideToggle(200);
+        });
+    }
+});
+

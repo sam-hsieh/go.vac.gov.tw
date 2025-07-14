@@ -216,6 +216,17 @@ footer .center-border {
   margin-bottom: 0.5rem;
 }
 
+.showAllToglle::after {
+  font-family: "Font Awesome 6 Free";
+  content: "\f107";
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.showAllToglle.nextClose::after {
+  content: "\f106";
+}
+
 @media screen and (max-width: 768px) {
   .back-to-top {
     padding: 3px 6px 3px 6px;
@@ -236,4 +247,4 @@ footer .center-border {
   .each-store {
     width: 80%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
